@@ -1,6 +1,10 @@
 html, body {
   padding: 0;
   margin: 0;
+ }
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 body {
@@ -23,8 +27,8 @@ body {
 }
 
 .title{
-  font-family: 'Cinzel', serif;
-  font-size: 3rem;
+  font-family: 'Economica', sans-serif;
+  font-size: 8rem;
   display: block;
   position: relative;
   text-shadow: 4.5px 4.5px #9596af;
@@ -46,7 +50,7 @@ body {
 
 .bioButton{
   position: relative;
-  background-color: #1b1d46;
+  background-color: black;
   width: 20vh;
   height: 5vh;
   border-radius: 15px 5px 15px 5px;
@@ -55,13 +59,14 @@ body {
   cursor: pointer;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Economica', sans-serif;
 }
 
 .bio-content span{
   position: relative;
   display: block;
   top: 30%;
-  font-size: .75rem;
+  font-size: .85rem;
   font-style: italic;
   margin: 0 auto;
 }
@@ -79,6 +84,7 @@ body {
 font-size: 1.25rem;
 padding: 5px;
 margin: 0 auto;
+font-family: 'Economica', sans-serif;
 }
 
 .player-container{
@@ -93,7 +99,7 @@ margin: 0 auto;
 }
 
 .full-image{
-  position: absolute;
+  position: fixed;
   top: 0;
   display: block;
   -webkit-box-sizing: border-box;
@@ -112,7 +118,7 @@ margin: 0 auto;
   top: 50%;
   display: block;
   border: none;
-  background-color: black;
+  background-color: transparent;
   color: white;
   cursor: pointer;
   z-index: 1;
@@ -135,6 +141,16 @@ margin: 0 auto;
   padding: 5px;
 }
 
+.playPause{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    color: red;
+    background-color: yellow;
+    font-size: 1rem;
+}
+
 .fa-window-close-o, .fa-caret-square-o-right, .fa-caret-square-o-left{
   font-size: 1.5rem;
 }
@@ -154,10 +170,30 @@ margin: 0 auto;
   -webkit-filter: grayscale(0%);
   cursor: pointer;
 }
+.wide-image-container{
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 50%;
+  height: 70vh;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform .3s, -webkit-filter .3s;
+  -webkit-filter: grayscale(0%);
+  cursor: pointer;
+}
 
 .image-container:hover{
   transform: scale(1.05);
   -webkit-filter: grayscale(100%);
+}
+
+.wide-image-container:hover{
+    transform: scale(1.05);
+    -webkit-filter: grayscale(100%);
 }
 
 .footer{
@@ -188,7 +224,7 @@ margin: 0 auto;
   display: block;
   font-style: italic;
   font-size: 1rem;
-  color: blue;
+  color: grey;
   padding: 5px;
 }
 
@@ -198,10 +234,6 @@ margin: 0 auto;
 .image-container{
   width: 33%;
   height: 30vh;
-}
-.homeImage{
-  width: 100%;
-  height: 45vh;
 }
 }
 
@@ -213,8 +245,17 @@ margin: 0 auto;
   height: 20vh;
 }
 
+.wide-image-container{
+  width: 50%;
+  height: 40vh;
+}
+
 .homeImage{
   width: 100%;
-  height: 35vh;
+  height: 100vh;
+}
+
+.title{
+font-size: 6rem;
 }
 }
