@@ -4,6 +4,7 @@ import './styles/main.css';
 import Button from './Button';
 import Player from './Player';
 import Footer from './Footer';
+import Clock from './Clock';
 import { images } from './images';
 
 class Home extends React.Component {
@@ -109,6 +110,7 @@ class Home extends React.Component {
                 </div>
                 <Button />
                 <Player />
+                <Clock />
                 {listOfImages}
                 {fullimage}
                 <Footer />
