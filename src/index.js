@@ -76,19 +76,19 @@ class Home extends React.Component {
         let nextbutton = null;
         if(this.state.currentPic < images.length -1){
             nextbutton = <span className="arrow next" onClick={this.clickNext}>
-            <i className="fa fa-caret-square-o-right" aria-hidden="true"></i></span>
+            <i className="fas fa-chevron-right"></i></span>
         }
 
         let prevbutton = null;
         if(this.state.currentPic > 0){
             prevbutton = <span className="arrow prev" onClick={this.clickPrevious}>
-            <i className="fa fa-caret-square-o-left" aria-hidden="true"></i></span>
+            <i className="fas fa-chevron-left"></i></span>
         }
 
         let closebutton = null;
         if(this.state.currentPic < images.length || this.state.currentPic > 0){
             closebutton = <span className="close" onClick={this.clickClose}>
-            <i className="fa fa-window-close-o" aria-hidden="true"></i></span>
+            <i className="far fa-window-close"></i></span>
         }
 
         let fullimage = null;

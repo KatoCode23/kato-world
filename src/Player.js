@@ -6,7 +6,7 @@ import { videos } from './videos';
 export default class Player extends Component {
     constructor(props){
         super(props);
-        this.showControls = false;
+        this.showControls = true;
 
         // I am on an iPhone
         // So turn on video controls

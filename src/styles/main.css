@@ -152,7 +152,7 @@ font-family: 'Economica', sans-serif;
     font-size: 1rem;
 }
 
-.fa-window-close-o, .fa-caret-square-o-right, .fa-caret-square-o-left{
+.fa-window-close, .fa-chevron-right, .fa-chevron-left{
   font-size: 1.5rem;
 }
 
@@ -176,6 +176,7 @@ font-family: 'Economica', sans-serif;
   display: inline-flex;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 5px;
   width: 50%;
   height: 70vh;
   text-align: center;
@@ -269,6 +270,9 @@ font-family: 'Economica', sans-serif;
   width: 33%;
   height: 30vh;
 }
+.arrow{
+  color: black;
+}
 }
 
 @media  (min-width: 0px) and
@@ -295,5 +299,8 @@ font-size: 6rem;
 
 .quote{
   font-size: 1rem;
+}
+.arrow{
+  color: black;
 }
 }
